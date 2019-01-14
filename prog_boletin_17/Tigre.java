@@ -18,4 +18,8 @@ public class Tigre extends Felino{
         System.out.println("Tigre nada");
     }
     
+    public void ruge(){
+        System.out.println("Tigre Ruge");
+    }
+    
 }

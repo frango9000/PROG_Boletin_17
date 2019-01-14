@@ -10,5 +10,7 @@ package prog_boletin_17;
  * @author fsancheztemprano
  */
 public abstract class Felino extends Mamifero {
-    
+    public void felinoToString(){
+        System.out.println("Felino");
+}
 }

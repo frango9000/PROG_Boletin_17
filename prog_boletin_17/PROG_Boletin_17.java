@@ -21,6 +21,21 @@ public class PROG_Boletin_17 {
         
         Papagaio pg = new Papagaio();
         pg.camina();
+        pg.voa();
+        
+        IPodeCaminar avestruz = new Avestruz();
+        avestruz.camina();
+        
+        Felino tigre = new Tigre();
+        tigre.camina();
+        tigre.nada();
+        tigre.felinoToString();
+        
+        Mamifero gato2= new Gato();
+        gato2.camina();
+        gato2.nada();
+        gato2.mamiferoToString();
+        
     }
     
 }
