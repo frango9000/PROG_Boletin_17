@@ -9,14 +9,13 @@ package prog_boletin_17;
  *
  * @author fsancheztemprano
  */
-public class Papagaio extends Ave implements IPodeCaminar, IPodeVoar {
-
-    public void camina() {
-        System.out.println("Papagaio Camina");
+public class Tigre extends Felino{
+    
+    public void camina(){
+        System.out.println("Tigre camina");
     }
-    public void voa(){
-        System.out.println("Papagaio Voa");
+    public void nada(){
+        System.out.println("Tigre nada");
     }
     
-
 }

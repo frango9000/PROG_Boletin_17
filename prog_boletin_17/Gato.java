@@ -9,7 +9,7 @@ package prog_boletin_17;
  *
  * @author fsancheztemprano
  */
-public class Gato extends Mamifero {
+public class Gato extends Felino{
     public void camina(){
         System.out.println("El Gato Camina");
     }
