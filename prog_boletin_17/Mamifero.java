@@ -9,7 +9,7 @@ package prog_boletin_17;
  *
  * @author fsancheztemprano
  */
-public abstract class Mamifero implements IPodeNadar, IPodeCaminar {
+public abstract class Mamifero implements IPodeCaminar {
     public void mamiferoToString(){
         System.out.println("Mamifero");
     }

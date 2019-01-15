@@ -10,9 +10,11 @@ package prog_boletin_17;
  * @author fsancheztemprano
  */
 public class Gato extends Felino{
+    @Override
     public void camina(){
         System.out.println("El Gato Camina");
     }
+    @Override
     public void nada(){
         System.out.println("El gato Nada");
     }

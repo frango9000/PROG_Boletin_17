@@ -9,7 +9,7 @@ package prog_boletin_17;
  *
  * @author fsancheztemprano
  */
-public class Morcego extends Ave implements IPodeCaminar, IPodeVoar {
+public class Morcego extends Mamifero implements IPodeVoar {
 
     public void camina() {
         System.out.println("Morcego Camina");

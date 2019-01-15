@@ -9,8 +9,9 @@ package prog_boletin_17;
  *
  * @author fsancheztemprano
  */
-public abstract class Felino extends Mamifero {
-    public void felinoToString(){
+public abstract class Felino extends Mamifero implements IPodeNadar {
+
+    public void felinoToString() {
         System.out.println("Felino");
-}
+    }
 }

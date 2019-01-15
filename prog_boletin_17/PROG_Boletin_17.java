@@ -33,8 +33,9 @@ public class PROG_Boletin_17 {
         
         Mamifero gato2= new Gato();
         gato2.camina();
-        gato2.nada();
+        //gato2.nada();
         gato2.mamiferoToString();
+        
         
     }
     
