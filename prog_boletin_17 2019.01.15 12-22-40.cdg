@@ -2,19 +2,19 @@
 
 <ClassDiagram name="prog_boletin_17">
   <ClassDiagramComponents>
-    <Class name="Mamifero" package="prog_boletin_17" visibility="public" isAbstract="true" xPosition="20.0" yPosition="20.0">
+    <Class name="Mamifero" package="prog_boletin_17" visibility="public" isAbstract="true" xPosition="678.0" yPosition="275.0">
       <Fields/>
       <Constructors/>
       <Methods>
         <Method name="mamiferoToString" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Ave" package="prog_boletin_17" visibility="public" isAbstract="true" xPosition="320.0" yPosition="20.0">
+    <Class name="Ave" package="prog_boletin_17" visibility="public" isAbstract="true" xPosition="59.0" yPosition="203.0">
       <Fields/>
       <Constructors/>
       <Methods/>
     </Class>
-    <Class name="PROG_Boletin_17" package="prog_boletin_17" visibility="public" xPosition="620.0" yPosition="20.0">
+    <Class name="PROG_Boletin_17" package="prog_boletin_17" visibility="public" xPosition="28.0" yPosition="54.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -23,7 +23,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Tigre" package="prog_boletin_17" visibility="public" xPosition="920.0" yPosition="20.0">
+    <Class name="Tigre" package="prog_boletin_17" visibility="public" xPosition="941.0" yPosition="620.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -32,19 +32,14 @@
         <Method name="ruge" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Avestruz" package="prog_boletin_17" visibility="public" xPosition="1220.0" yPosition="20.0">
+    <Class name="Avestruz" package="prog_boletin_17" visibility="public" xPosition="236.0" yPosition="654.0">
       <Fields/>
       <Constructors/>
       <Methods>
         <Method name="camina" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Interface name="IPodeVoar" package="prog_boletin_17" visibility="public" xPosition="1520.0" yPosition="20.0">
-      <Methods>
-        <Method name="voa" returnType="void" visibility="package"/>
-      </Methods>
-    </Interface>
-    <Class name="Morcego" package="prog_boletin_17" visibility="public" xPosition="1820.0" yPosition="20.0">
+    <Class name="Morcego" package="prog_boletin_17" visibility="public" xPosition="472.0" yPosition="637.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -52,12 +47,7 @@
         <Method name="voa" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Interface name="IPodeCaminar" package="prog_boletin_17" visibility="public" xPosition="2120.0" yPosition="20.0">
-      <Methods>
-        <Method name="camina" returnType="void" visibility="package"/>
-      </Methods>
-    </Interface>
-    <Class name="Gato" package="prog_boletin_17" visibility="public" xPosition="20.0" yPosition="420.0">
+    <Class name="Gato" package="prog_boletin_17" visibility="public" xPosition="651.0" yPosition="637.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -65,7 +55,7 @@
         <Method name="nada" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Papagaio" package="prog_boletin_17" visibility="public" xPosition="320.0" yPosition="420.0">
+    <Class name="Papagaio" package="prog_boletin_17" visibility="public" xPosition="28.0" yPosition="654.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -73,31 +63,41 @@
         <Method name="voa" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Felino" package="prog_boletin_17" visibility="public" isAbstract="true" xPosition="620.0" yPosition="420.0">
+    <Class name="Felino" package="prog_boletin_17" visibility="public" isAbstract="true" xPosition="754.0" yPosition="454.0">
       <Fields/>
       <Constructors/>
       <Methods>
         <Method name="felinoToString" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Interface name="IPodeNadar" package="prog_boletin_17" visibility="public" xPosition="920.0" yPosition="420.0">
+    <Interface name="IPodeVoar" package="prog_boletin_17" visibility="public" xPosition="301.0" yPosition="37.0">
+      <Methods>
+        <Method name="voa" returnType="void" visibility="package"/>
+      </Methods>
+    </Interface>
+    <Interface name="IPodeCaminar" package="prog_boletin_17" visibility="public" xPosition="548.0" yPosition="37.0">
+      <Methods>
+        <Method name="camina" returnType="void" visibility="package"/>
+      </Methods>
+    </Interface>
+    <Interface name="IPodeNadar" package="prog_boletin_17" visibility="public" xPosition="1146.0" yPosition="454.0">
       <Methods>
         <Method name="nada" returnType="void" visibility="package"/>
       </Methods>
     </Interface>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
-    <IsRelation name="is" source="prog_boletin_17.Avestruz" target="prog_boletin_17.Ave"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="prog_boletin_17.Felino" target="prog_boletin_17.IPodeNadar"/>
+    <IsRelation name="is" source="prog_boletin_17.Morcego" target="prog_boletin_17.Mamifero"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="prog_boletin_17.Papagaio" target="prog_boletin_17.IPodeCaminar"/>
     <IsRelation name="is" source="prog_boletin_17.Felino" target="prog_boletin_17.Mamifero"/>
     <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="prog_boletin_17.Mamifero" target="prog_boletin_17.IPodeCaminar"/>
-    <IsRelation name="is" source="prog_boletin_17.Tigre" target="prog_boletin_17.Felino"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="prog_boletin_17.Morcego" target="prog_boletin_17.IPodeVoar"/>
+    <IsRelation name="is" source="prog_boletin_17.Avestruz" target="prog_boletin_17.Ave"/>
     <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="prog_boletin_17.Papagaio" target="prog_boletin_17.IPodeVoar"/>
     <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="prog_boletin_17.Avestruz" target="prog_boletin_17.IPodeCaminar"/>
-    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="prog_boletin_17.Felino" target="prog_boletin_17.IPodeNadar"/>
+    <IsRelation name="is" source="prog_boletin_17.Tigre" target="prog_boletin_17.Felino"/>
     <IsRelation name="is" source="prog_boletin_17.Papagaio" target="prog_boletin_17.Ave"/>
-    <IsRelation name="is" source="prog_boletin_17.Morcego" target="prog_boletin_17.Mamifero"/>
-    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="prog_boletin_17.Morcego" target="prog_boletin_17.IPodeVoar"/>
     <IsRelation name="is" source="prog_boletin_17.Gato" target="prog_boletin_17.Felino"/>
-    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="prog_boletin_17.Papagaio" target="prog_boletin_17.IPodeCaminar"/>
   </ClassDiagramRelations>
 </ClassDiagram>
